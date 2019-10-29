@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Assingnment2Component implements OnInit {
   show : boolean = true ;
-  buttons : Array<Number> = [];
+  buttons : Array<any> = [];
   noColor : boolean = true;
   constructor() {
     
@@ -17,7 +17,7 @@ export class Assingnment2Component implements OnInit {
   }
   showText() {
     this.show = !this.show;
-    this.buttons.push(this.buttons.length+1);
+    this.buttons.push(new Date());
     
   }
   getColor() {

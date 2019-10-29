@@ -13,8 +13,8 @@
             <hr>
             <button class="btn btn-primary" value="Dislpay Details" (click)="showText()">Display Details</button>
             <p *ngIf="show"> Secret Password : tuna</p>
-            <div [ngStyle]="{backgroundColor : button >=5 ? 'blue' : 'transparent'}" [ngClass]="{color : button >=5}"
-                *ngFor="let button of buttons">
+            <div [ngStyle]="{backgroundColor : i >=4 ? 'blue' : 'transparent'}" [ngClass]="{color : i >=4}"
+                *ngFor="let button of buttons; let i = index">
                 {{button}}</div>
 
         </div>

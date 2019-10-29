@@ -1,0 +1,17 @@
+<div class="container">
+    <p class = "text-primary">Assingnment 1</p>
+    <div class="row">
+        <div class="col-xs-12">
+            <ol>
+                <li> Add a Input field which updates a property via 2-way Binding</li>
+                <li> Output Username property below the Input field via String Interpolation</li>
+                <li> Add a Button which may only be clicked if username is not an empty String</li>
+                <li> Upon Clicking the Button the username should be reset to an Empty String</li>
+            </ol>
+            <input type="text" class="form-control" [(ngModel)]="userName">
+            <p>{{userName}}</p>
+            <button class="btn btn-primary" (click)="resetUsername()" [disabled]="allowButtonClick()">Reset
+                Username</button><br><br>
+        </div>
+    </div>
+</div>
